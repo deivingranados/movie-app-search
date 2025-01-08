@@ -1,0 +1,25 @@
+<div *ngIf="isLoading" class="loading">Loading...</div>
+
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+<div *ngIf="movie" class="movie-details">
+  <div class="content-image">
+    <img
+      [src]="
+        movie.poster_path
+          ? 'https://image.tmdb.org/t/p/w500/' + movie.poster_path
+          : 'assets/placeholder.png'
+      "
+      alt="{{ movie.title }}"
+      class="movie-poster-detail"
+    />
+  </div>
+  <div class="content-text">
+    <h1>{{ movie.title }}</h1>
+    <p><strong>Release Date:</strong> {{ movie.release_date }}</p>
+    <p><strong>Duration:</strong> {{ movie.runtime }} minutes</p>
+    <p><strong>Rating:</strong> {{ movie.vote_average }}</p>
+    <p><strong>language:</strong> {{ movie.original_language }}</p>
+    <p>{{ movie.overview }}</p>
+  </div>
+</div>

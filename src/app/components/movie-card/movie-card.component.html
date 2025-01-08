@@ -1,0 +1,16 @@
+<div class="movie-card">
+  <img
+    [src]="
+      movie.poster_path
+        ? 'https://image.tmdb.org/t/p/w500/' + movie.poster_path
+        : 'assets/placeholder.png'
+    "
+    alt="{{ movie.title }}"
+    class="movie-poster"
+  />
+  <div class="movie-details">
+    <h6>{{ movie.title }}</h6>
+    <p><strong>Release Date:</strong> {{ movie.release_date || "N/A" }}</p>
+    <button class="button-deatil" (click)="goToDetails()">Details</button>
+  </div>
+</div>

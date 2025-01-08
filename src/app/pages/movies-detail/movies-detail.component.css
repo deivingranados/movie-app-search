@@ -1,0 +1,36 @@
+.movie-details {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  margin-top: 10rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  s h1 {
+    margin-bottom: 1rem;
+  }
+
+  .cast-list {
+    margin-top: 1rem;
+
+    div {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.movie-poster-detail {
+  width: 100%;
+}
+.content-text {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 380px) {
+  .movie-details {
+    display: flow;
+    margin-top: 1em;
+  }
+}
