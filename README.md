@@ -1,59 +1,27 @@
-# MovieAppSearch
+# Movie App Search 🎥
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Aplicación web en Angular para buscar y visualizar información de películas utilizando la API de TMDB.
 
-## Development server
+## Características
+- Búsqueda de películas.
+- Paginación de resultados.
+- Detalles de cada película.
+## patron
+utilice patron de diseño factory para los servicios, 
 
-To start a local development server, run:
+## Tecnologías Utilizadas
+- Angular
+- TypeScript
+- TMDB API
 
-```bash
-ng serve
-```
+## Instalación
+1. Clona este repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Configura las credenciales de la API en el archivo `src/environments/environment.ts`.
+4. Inicia la aplicación con `ng serve`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Uso
+Accede a la aplicación en `http://localhost:4200/`.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribuciones
+¡Las contribuciones son bienvenidas! Por favor, crea un fork y envía un pull request.
